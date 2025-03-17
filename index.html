@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="https://i.pinimg.com/originals/97/e1/44/97e144487f9aa50bf8e0518c1da0d539.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pompompurin Cafe - Bringing Sweet Smiles with Every Bite! Enjoy adorable, themed desserts and drinks in a cozy atmosphere.">
+    <title>Pompompurin Cafe</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #fffacd;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ffeb3b;
+            padding: 20px;
+            font-size: 30px;
+            font-weight: bold;
+            color: #7a4a23;
+        }
+        nav {
+            background-color: #ffd700;
+            padding: 10px;
+        }
+        nav a {
+            color: brown;
+            text-decoration: none;
+            padding: 15px;
+            margin: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        nav a:hover {
+            background-color: #ffcc33;
+            border-radius: 5px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .gallery-images img, .menu-item img {
+            width: 280px;
+            border-radius: 10px;
+            margin: 10px;
+            box-shadow: 5px 5px 10px #d4a017;
+        }
+        .info-box {
+            background-color: #ffeb3b;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px auto;
+            max-width: 80%;
+            box-shadow: 5px 5px 10px #d4a017;
+            text-align: left;
+        }
+        iframe {
+            width: 80%;
+            height: 300px;
+            border-radius: 10px;
+            margin-top: 10px;
+            box-shadow: 5px 5px 10px #d4a017;
+        }
+        footer {
+            background-color: #ffeb3b;
+            padding: 10px;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #7a4a23;
+        }
+    </style>
+    <script>
+        function toggleSection(sectionId) {
+            var sections = ["gallery-content", "menu-content", "location-content"];
+            sections.forEach(id => {
+                document.getElementById(id).style.display = id === sectionId ? "block" : "none";
+            });
+        }
+
+        function showContactInfo() {
+            alert("📍 Address: 3F Harajuku ALTA, 1-16-4 Jingumae, Shibuya, Tokyo, Japan\n🕒 Opening Hours: 10:00 AM - 8:00 PM (Monday - Sunday)\n☎ Contact: +81 3-6434-XXXX");
+        }
+    </script>
+</head>
+<body>
+    <header>Pompompurin Cafe</header>
+    
+    <nav>
+        <a href="#" onclick="toggleSection('gallery-content')">Gallery</a>
+        <a href="#" onclick="toggleSection('menu-content')">Cafe Menu</a>
+        <a href="#" onclick="toggleSection('location-content')">Location</a>
+        <a href="#" onclick="showContactInfo()">Contact Info</a>
+    </nav>
+
+    <div class="container">
+        <h2>Welcome to Pompompurin Cafe!</h2>
+        <p>Enjoy delicious treats in a cozy, Pompompurin-themed Cafe ;)</p>
+        
+        <!-- Interactive Pompompurin Coffee Selection -->
+<div class="coffee-selection">
+    <h3>Choose Your Pompompurin Drink!</h3>
+    <button class="coffee-btn" onclick="changeCoffee('Caramel Pudding Latte', '#D4A017')">Caramel Pudding Latte</button>
+    <button class="coffee-btn" onclick="changeCoffee('Vanilla Cream Coffee', '#F5DEB3')">Vanilla Cream Coffee</button>
+    <button class="coffee-btn" onclick="changeCoffee('Choco Banana Mocha', '#8B4513')">Choco Banana Mocha</button>
+    <br>
+    <div id="coffee-cup">☕</div>
+    <p id="coffee-message">Select a drink to see Pompompurin’s favorite flavors!</p>
+</div>
+
+<script>
+    function changeCoffee(name, color) {
+        document.getElementById("coffee-cup").style.backgroundColor = color;
+        document.getElementById("coffee-message").innerHTML = "You chose <strong>" + name + "</strong>! Enjoy your cute and cozy drink ☕✨";
+    }
+</script>
+
+        <!-- Gallery Content -->
+        <div id="gallery-content" style="display: none;">
+            <h2>Gallery</h2>
+            <p>Step into a <strong>Pompompurin wonderland</strong>! Our café is full of adorable decorations, themed food, and cozy vibes.</p>
+
+            <div class="gallery-images">
+                <img src="https://content.fun-japan.jp/renewal-prod/cms/articles/content/S57335855jpg_2021-10-19-04-36-08.jpg" alt="Pompompurin Cafe Entrance">
+                <p>Welcome to the <strong>Pompompurin Café</strong>! The entrance is full of cuteness.</p>
+
+                <img src="https://www.japan-experience.com/sites/default/files/styles/scale_crop_760x556/public/legacy/japan_experience/1526654099777.jpg.webp?itok=p0phQF3u" alt="Inside the cafe">
+                <p>The inside is decorated with <strong>Pompompurin plushies</strong> and warm yellow tones.</p>
+
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/13/4d/f4/79/pancakes.jpg" alt="Pompompurin Pancakes">
+                <p>Our <strong>famous Pompompurin Pancakes</strong> are fluffy and delicious!</p>
+
+                <img src="https://1.bp.blogspot.com/-hXbkeXGpEOY/WS4xY4mCcdI/AAAAAAAADoU/dwBMEy0xK8QvNhAf7E7NWYEWmdxdqIMSwCLcB/s1600/FullSizeRender_4.jpg" alt="Themed Drinks">
+                <p>Try our <strong>Caramel Pudding Latte</strong>, perfect for Pompompurin fans!</p>
+
+                <img src="https://best-japanese.co.uk/wp-content/uploads/2024/11/IMG_6432-scaled.jpg" alt="Pompompurin Table">
+                <p>Even the <strong>tables and seats</strong> are designed with Pompompurin in mind!</p>
+            </div>
+        </div>
+
+        <!-- Cafe Menu Content -->
+        <div id="menu-content" style="display: none;">
+            <h2>Pompompurin Cafe Menu</h2>
+            
+            <h3>Main Dishes</h3>
+
+            <div class="menu-item">
+                <img src="https://www.moshimoshi-nippon.jp/wp/wp-content/uploads/2021/04/c870f7bc75fd8c19d5a9c87bdcbc596f.jpg" alt="Souffle Omurice">
+                <p><strong>Souffle Omurice</strong><br>¥1,490 (₱550)</p>
+                <p>A fluffy soufflé-style omelet served over fragrant tomato rice, topped with a rich demi-glace sauce. Designed to resemble Pompompurin’s adorable face!</p>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://2.bp.blogspot.com/-sVq-5Zb0uUk/WS4xXjGZl1I/AAAAAAAADoI/qQ3YPYhmlUImi6LYy4qLSSBdhRmUeGL1wCLcB/s1600/FullSizeRender_1.jpg" alt="Beef Curry">
+                <p><strong>Beef Curry</strong><br>¥1,490 (₱550)</p>
+                <p>A hearty Japanese beef curry served with fluffy rice, shaped like Pompompurin. The dish is rich, mildly spiced, and comforting!</p>
+            </div>
+
+            <h3>Desserts</h3>
+
+            <div class="menu-item">
+                <img src="https://cdn.savvytokyo.com/app/uploads/2015/07/DSCN0276-cropped.jpg" alt="Pompompurin Pancakes">
+                <p><strong>Pompompurin Pancakes</strong><br>¥1,200 (₱450)</p>
+                <p>Soft and fluffy pancakes stacked with a creamy vanilla custard filling. Comes with a side of maple syrup and fruit toppings.</p>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/76/a7/7f/french-toast.jpg" alt="Caramel Pudding">
+                <p><strong>Caramel Pudding</strong><br>¥980 (₱380)</p>
+                <p>Pompompurin’s signature caramel pudding, smooth and creamy, topped with fresh whipped cream and a drizzle of caramel sauce.</p>
+            </div>
+
+            <h3>Drinks</h3>
+
+            <div class="menu-item">
+                <img src="https://thesmartlocal.jp/wp-content/uploads/2023/02/Pompompurin-Cafe-7.jpeg" alt="Caramel Pudding Latte">
+                <p><strong>Caramel Pudding Latte</strong><br>¥750 (₱290)</p>
+                <p>A sweet and creamy latte inspired by Pompompurin’s favorite dessert, topped with whipped cream and caramel drizzle.</p>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5XRLdWEwTGPCDksdoEqYj2wh91N55SOGZv5eii6pAinIlLRz3uivn0IKRJlc9a1eqCREnT_68nDS2P2OTWiDvGyLEy9bHuN5x5S-2kHe_yS8Zn1IIHlCOVh96LFd2lbO8Brnf/s1600/Purin+-+3A.JPG" alt="Strawberry Milk">
+                <p><strong>Strawberry Milk</strong><br>¥700 (₱270)</p>
+                <p>A refreshing blend of fresh strawberries and milk, served with a cute Pompompurin straw topper.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Location Content -->
+<div id="location-content" style="display: none;">
+    <h2>Visit Us!</h2>
+    <p>📍 <strong>Address:</strong> 3F Harajuku ALTA, 1-16-4 Jingumae, Shibuya, Tokyo, Japan</p>
+    <p>🕒 <strong>Opening Hours:</strong> 10:00 AM - 8:00 PM (Monday - Sunday)</p>
+    <p>☎ <strong>Contact:</strong> +81 3-6434-XXXX</p>
+    <p>🚆 <strong>Nearest Station:</strong> Harajuku Station (JR Yamanote Line) - 2-minute walk</p>
+    <p>🗺️ <strong>Directions:</strong> Exit Harajuku Station, walk towards Takeshita Street, turn left at Harajuku ALTA.</p>
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.835321604053!2d139.70524291525865!3d35.6704790801976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cb16e99dd31%3A0x748a67d24f3c93b1!2sHarajuku%20ALTA!5e0!3m2!1sen!2sjp!4v1617156227093!5m2!1sen!2sjp"
+        allowfullscreen="" loading="lazy">
+    </iframe>
+</div>
+
+    <footer>© 2025 Pompompurin Cafe. All rights reserved.</footer>
+</body>
+</html>
